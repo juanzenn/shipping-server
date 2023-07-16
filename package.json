@@ -7,7 +7,7 @@
     "db:migrate": "drizzle-kit generate:sqlite",
     "db:studio": "drizzle-kit studio:sqlite",
     "dev": "nodemon src/app.ts --watch",
-    "build": "npx run db:push && tsc -p .",
+    "build": "npm run db:push && tsc -p .",
     "start": "node dist/app.js"
   },
   "keywords": [],
