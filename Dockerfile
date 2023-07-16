@@ -2,6 +2,7 @@ FROM node:18-alpine as build-image
 WORKDIR /usr/src/app
 COPY package*.json ./
 COPY tsconfig.json ./
+COPY drizzle.config.ts ./
 COPY ./src ./src
 RUN npm ci
 RUN npm run build
